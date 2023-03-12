@@ -65,6 +65,17 @@ ul {
 .header {
   padding: 24px 0;
 }
+.header-link.active::after {
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  background-color: var(--main-title-color5);
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -99,6 +110,10 @@ ul {
 .header-item {
 }
 .header-link {
+  transition: color 0.35s linear;
+  position: relative;
+  padding: 24px 0;
+  position: relative;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -111,14 +126,16 @@ ul {
 }
 
 .header-email {
+  transition: color;
   margin-right: 40px;
   font-size: 16px;
   line-height: 1.5;
-
+  transition: color 0.35s linear;
   letter-spacing: 0.02em;
   color: var(--main-title-color2);
 }
 .header-tel {
+  transition: color 0.35s linear;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -160,6 +177,7 @@ ul {
   color: var(--main-title-color);
 }
 .hero-btn {
+  transition: color 0.35s linear;
   margin-left: auto;
   margin-right: auto;
   min-width: 196px;
@@ -199,7 +217,7 @@ ul {
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  width: 264px;
+  margin-bottom: 8px;
   height: 112px;
 }
 
