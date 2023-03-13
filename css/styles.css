@@ -696,11 +696,11 @@ ul {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-text-content {
-  overflow: auto;
   transition: transform 0.35s linear;
   transform: translateY(100%);
   padding-top: 40px;
   padding-left: 32px;
+  padding-right: 32px;
   top: 0;
   left: 0;
   position: absolute;
@@ -712,7 +712,8 @@ ul {
   color: var(--main-title-color10);
   background-color: var(--main-title-color6);
 }
-.portfolio-link:hover .portfolio-text-content {
+.portfolio-link:hover,
+.portfolio-link:focus .portfolio-text-content {
   transform: translateY(0);
   opacity: 1;
 }
@@ -801,7 +802,7 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  transition: opacity 0.35s linear, visability 0.35s linear;
+  transition: opacity 0.35s linear, visibility 0.35s linear;
 }
 .modal {
   width: 408px;
