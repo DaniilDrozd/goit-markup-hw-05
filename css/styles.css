@@ -834,8 +834,8 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop .is-hidden .modal {
-  transform: translate (-50%, -50%) scale (1.2);
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.1);
 }
 .modal {
   max-width: 408px;
@@ -847,7 +847,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate (-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn {
