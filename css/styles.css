@@ -411,7 +411,7 @@ ul {
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-  width: 168px;
+
   height: 88px;
   padding: 10px;
 
@@ -615,13 +615,15 @@ ul {
 
 /* <!-- Portfolio --> */
 .portfolio-menu-Nav-2 {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .portfolio-navigation {
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-top: 96px;
+  margin-bottom: 72px;
 }
 .portfolio-wrap {
   overflow: hidden;
@@ -694,11 +696,6 @@ ul {
   gap: 24px;
   display: flex;
   list-style: none;
-  box-sizing: border-box;
-  max-width: 100%;
-  height: auto;
-  padding: 0;
-  margin-bottom: 48px;
 }
 .Project-title {
   margin-bottom: 8px;
